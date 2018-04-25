@@ -1,0 +1,68 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+/*
+.container {
+  display: flex;
+  justify-content: center;
+}*/
+
+.hot .temperature {
+  background-color: red;
+}
+
+.thunderstorm .window {
+  background-image: url(/images/window-thunderstorm.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.drizzle .window {
+  background-image: url(/images/window-drizzle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.rain .window {
+  background-image: url(/images/window-rain.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.snow .window {
+  background-image: url(/images/window-snow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.clear .window {
+  background-image: url(/images/window-clear.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.clouds .window {
+  background-image: url(/images/window-clouds.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.haze,
+.mist .window {
+  background-image: url(/images/window-haze.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.window {
+  height: 30vw;
+  width: 30vw;
+}
