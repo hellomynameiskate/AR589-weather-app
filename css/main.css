@@ -1,15 +1,24 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
 
-/*
-.container {
-  display: flex;
-  justify-content: center;
-}*/
+.warm .temperature {
+  background-color: #ffb700;
+}
 
 .hot .temperature {
-  background-color: red;
+  background-color: #ff41b4;
+}
+
+.cold .temperature {
+  background-color: #00449e;
+}
+
+.error .temperature {
+  background-color: ##137752;
 }
 
 .thunderstorm .window {
@@ -54,7 +63,13 @@
   background-position: center;
 }
 
-.haze,
+.haze .window {
+  background-image: url(/images/window-haze.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .mist .window {
   background-image: url(/images/window-haze.png);
   background-repeat: no-repeat;
@@ -62,7 +77,39 @@
   background-position: center;
 }
 
-.window {
+.breezy .test {
+  animation: hello 5s linear infinite;
+  background-image: url(/images/petals.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  right: -10rem;
+}
+
+@keyframes hello {
+  0% {
+    right: 10%;
+  }
+  100% {
+    right: 70%;
+  }
+}
+
+/*
+@media (max-width: 500px) {
+  .window {
+    height: 75vw;
+    width: 75vw;
+  }
+} */
+
+.test {
   height: 30vw;
   width: 30vw;
+}
+
+.window {
+  height: 40vw;
+  width: 40vw;
 }

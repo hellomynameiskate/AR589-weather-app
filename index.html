@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,27 +16,30 @@
 </head>
 
 <body>
-  <div class="tc georgia f6">
+  <div class="temperature tc avenir washed-yellow f6">
 
     <!-- If there is an error, this box is shown. 'dn' is the only required class -->
-    <div id="error" class="dn bg-blue white pa4 fixed bottom-0 w-100">
+    <div id="error" class="dn bg-green white pa4 fixed bottom-0 w-100">
       Sorry, where are you? Please try again.
     </div>
 
     <!-- Search Box -->
     <div class="w-100 pa2">
-      <form id="location-search" class="pa5-ns pa2 georgia">
-        <h1 class="georgia">
-      <span class="mr3 mb2 f3 f2-ns">
+      <form id="location-search" class="pa3-ns roboto">
+        <h1 class="avenir">
+      <span class="f3 f2-ns">
             How does it look out there?
           </span></h1>
-        <div class="f4-ns f5 pa2-ns georgia"><input type="text" id="area" value="Boston" class="flex-auto">
+        <div class="f4-ns f5 avenir pb3"><input type="text" id="area" value="Boston" class="flex-auto">
         </div>
       </form>
     </div>
 
     <!-- Window Image -->
-    <div class="window w-100-ns h5 center"></div>
+    <div class="window w-100-ns h5 center ph3">
+      <div class="test w-100-ns h5 center"></div>
+
+    </div>
 
     <!-- Content -->
 
