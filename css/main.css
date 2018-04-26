@@ -1,9 +1,6 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
 
 .warm .temperature {
   background-color: #ffb700;
@@ -77,8 +74,15 @@
   background-position: center;
 }
 
-.breezy .test {
-  animation: hello 5s linear infinite;
+.fog .window {
+  background-image: url(/images/window-haze.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.breezy .petals {
+  animation: flower 5s linear infinite;
   background-image: url(/images/petals.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -87,8 +91,8 @@
   right: -10rem;
 }
 
-.windy .test {
-  animation: hello 10s linear infinite;
+.windy .petals {
+  animation: flower 10s linear infinite;
   background-image: url(/images/petals.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -97,7 +101,17 @@
   right: -10rem;
 }
 
-@keyframes hello {
+/* .hot .sunshine {
+  animation: sunny 10s linear infinite;
+  background-image: url(/images/hot-sunshine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  right: -10rem;
+}*/
+
+@keyframes flower {
   0% {
     right: 10%;
   }
@@ -114,7 +128,7 @@
   }
 } */
 
-.test {
+.petals {
   height: 30vw;
   width: 30vw;
 }
