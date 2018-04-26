@@ -87,6 +87,16 @@
   right: -10rem;
 }
 
+.windy .test {
+  animation: hello 10s linear infinite;
+  background-image: url(/images/petals.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  right: -10rem;
+}
+
 @keyframes hello {
   0% {
     right: 10%;
@@ -110,6 +120,6 @@
 }
 
 .window {
-  height: 40vw;
-  width: 40vw;
+  height: 35vw;
+  width: 35vw;
 }
