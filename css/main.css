@@ -2,6 +2,10 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
+.league {
+  font-family: "League Script", cursive;
+}
+
 .warm .temperature {
   background-color: #ffb700;
 }
@@ -15,7 +19,7 @@
 }
 
 .error .temperature {
-  background-color: ##137752;
+  background-color: #137752;
 }
 
 .thunderstorm .window {
@@ -100,16 +104,6 @@
   position: relative;
   right: -10rem;
 }
-
-/* .hot .sunshine {
-  animation: sunny 10s linear infinite;
-  background-image: url(/images/hot-sunshine.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: relative;
-  right: -10rem;
-}*/
 
 @keyframes flower {
   0% {

@@ -54,13 +54,23 @@ async function getWeather(city, key, units = "imperial") {
     errorBox.classList.add("dn");
 
     // Set Location Data
-    locationName.innerText = data.name || "";
-    country.innerText = data.sys.country;
+    if (locationName) {
+      locationName.innerText = data.name || "";
+    }
+    if (country) {
+      country.innerText = data.sys.country;
+    }
 
     // Set Temperature Data
-    temp.innerText = Math.round(data.main.temp);
-    tempMin.innerText = Math.round(data.main.temp_min);
-    tempMax.innerText = Math.round(data.main.temp_max);
+    if (temp) {
+      temp.innerText = Math.round(data.main.temp);
+    }
+    if (tempMin) {
+      tempMin.innerText = Math.round(data.main.temp_min);
+    }
+    if (tempMax) {
+      tempMax.innerText = Math.round(data.main.temp_max);
+    }
 
     // Set Temperature Body Class
     if (data.main.temp < 45) {
@@ -72,9 +82,15 @@ async function getWeather(city, key, units = "imperial") {
     }
 
     // Set Weather Data
-    condition.innerText = data.weather[0].main;
-    conditionDescription.innerText = data.weather[0].description;
-    windSpeed.innerText = Math.round(data.wind.speed);
+    if (condition) {
+      condition.innerText = data.weather[0].main;
+    }
+    if (conditionDescription) {
+      conditionDescription.innerText = data.weather[0].description;
+    }
+    if (windSpeed) {
+      windSpeed.innerText = Math.round(data.wind.speed);
+    }
 
     // Set Weather Body Class
     document.body.classList.add(data.weather[0].main.toLowerCase());

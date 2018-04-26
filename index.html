@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-
-
+  <link href="https://fonts.googleapis.com/css?family=League+Script|Nixie+One" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,7 +15,7 @@
 </head>
 
 <body>
-  <div class="temperature tc avenir washed-yellow f6">
+  <div class="temperature tc avenir washed-yellow f6 pb7">
 
     <!-- If there is an error, this box is shown. 'dn' is the only required class -->
     <div id="error" class="dn bg-green white pa4 fixed bottom-0 w-100">
@@ -25,7 +24,7 @@
 
     <!-- Search Box -->
     <div class="w-100 pa2">
-      <form id="location-search" class="pa3-ns roboto">
+      <form id="location-search" class="pa3-ns avenir">
         <h1 class="avenir">
       <span class="f3 f2-ns">
             How does it look out there?
@@ -36,33 +35,39 @@
     </div>
 
     <!-- Window Image -->
+
+
     <div class="window w-100-ns h5 center ph3">
       <div class="petals w-100-ns h5 center"></div>
-      <div class="sunshine"></div>
+
 
     </div>
+
+
+
+
 
     <!-- Content -->
 
     <div class="flex flex-wrap pa1">
       <div class="w-100 w-50-m w-third-l">
-        <h2>Location</h2>
-        <p>City: <span id="location-name"></span></p>
-        <p>Country: <span id="country"></span></p>
+        <p class="f4 b league">location</p>
+        <h2><span id="location-name"></span>,
+          <span id="country"></span></h2>
       </div>
 
       <div class="w-100 w-50-m w-third-l">
-        <h2>Temperature</h2>
-        <p>Current Temp: <span id="temp"></span></p>
-        <p>Max Temp: <span id="temp-max"></span></p>
-        <p>Min Temp: <span id="temp-min"></span></p>
+        <p class="f4 b league">temperature</p>
+        <h2><span id="temp"></span> °F</h2>
+        <!--<p>Max Temp: <span id="temp-max"></span></p>
+        <p>Min Temp: <span id="temp-min"></span></p>-->
       </div>
 
       <div class="w-100 w-50-m w-third-l">
-        <h2>Weather</h2>
-        <p>Condition: <span id="condition"></span></p>
-        <p>Description: <span id="condition-description"></span></p>
-        <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+        <p class="f4 b league">weather</p>
+        <h2><span id="condition"></span></h2>
+        <!--<p>Description: <span id="condition-description"></span></p>
+        <p>Wind Speed: <span id="wind-speed"></span>mph</p>-->
       </div>
     </div>
 
