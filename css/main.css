@@ -108,9 +108,11 @@
 @keyframes flower {
   0% {
     right: 10%;
+    opacity: 1;
   }
   100% {
     right: 70%;
+    opacity: 0;
   }
 }
 
